@@ -1,14 +1,10 @@
 import { useEffect, useState } from "react";
 
 import "./App.css";
-import {
-  Button,
-  Card,
-  CardContent,
-  CircularProgress,
-  Typography,
-} from "@mui/material";
+import { Box, CircularProgress } from "@mui/material";
 import { useSnackbar } from "notistack";
+import { DocumentDetector } from "./components";
+import Header from "./components/Header";
 
 function App() {
   const [loading, setLoading] = useState(false);
@@ -48,27 +44,12 @@ function App() {
   }
 
   return (
-    <Card>
-      <CardContent>
-        <Typography
-          color="text.secondary"
-          variant="h1"
-          align="center"
-          sx={{ mt: 4 }}
-          fontWeight="fontWeightSemiBold"
-        >
-          Custom Payoneer Payment Gateway
-        </Typography>
-        <Button
-          color="primary"
-          variant="contained"
-          onClick={() => setLoading(true)}
-          sx={{ mt: 4 }}
-        >
-          Gateway Restart
-        </Button>
-      </CardContent>
-    </Card>
+    <Box>
+      <Header />
+      <Box mt={12}>
+      <DocumentDetector />
+      </Box>
+    </Box>
   );
 }
 

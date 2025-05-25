@@ -13,7 +13,7 @@ const defaultTheme = createTheme({
 const breakpoints = defaultTheme.breakpoints;
 // @ts-expect-error - No need to add those extra properties, as they will be picked by default.
 const responsiveTypography: TypographyProps = {
-  fontFamily: "'Avenir Next World', sans-serif",
+  fontFamily:"'Avenir Next World', 'Helvetica Neue', Arial, sans-serif",
   fontWeightSemiBold: 600,
   // Breakpoint-specific typography
   h1: {
