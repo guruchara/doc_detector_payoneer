@@ -93,7 +93,7 @@ const DocumentDetector= () => {
         <Typography
           variant="body2"
           color="text.secondary"
-          fontWeight="fontWeightSemiBold"
+          fontWeight="fontWeightMedium"
           textAlign="left"
         >
           To find similar document please choose from list
